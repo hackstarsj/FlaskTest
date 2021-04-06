@@ -30,7 +30,7 @@ def create():
     ser_data = user_schema.dump(user)
 
     token = Auth.generate_token(ser_data.get('id'))
-    print("TOKEN")
+    print("TOKEN 1")
     print(token)
 
     return custom_response({'jwt_token': token}, 201)
